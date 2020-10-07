@@ -60,9 +60,21 @@
    ;; generic APIs above.
 
    ;; Descriptor types
+
+   ;; descriptor and accessors
+   #:descriptor
+   #:proto-class
+   #:proto-name
+   #:proto-qualified-name
+   #:proto-options
+
+   ;; file-descriptor and accessors
+   #:file-descriptor
+   ;; #:proto-syntax
+   ;; #:proto-package-name ; TODO(cgay): currently proto-package
+
    #:extension-descriptor
    #:field-descriptor
-   #:file-descriptor
    #:message-descriptor
    #:method-descriptor
    #:option-descriptor
@@ -125,10 +137,9 @@
    #:make-deserializer
    #:make-serializer
    #:make-tag
-   #:proto-class
-   #:proto-external-field-name
-   #:proto-default
    #:proto-container
+   #:proto-default
+   #:proto-external-field-name
    #:proto-fields
    #:proto-index
    #:proto-input-name
@@ -136,10 +147,8 @@
    #:proto-internal-field-name
    #:proto-label
    #:proto-methods
-   #:proto-name
    #:proto-output-name
    #:proto-output-streaming-p
-   #:proto-qualified-name
    #:proto-server-stub
    #:proto-service-name
    #:proto-source-location              ; should be proto-source-pathname now?

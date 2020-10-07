@@ -43,8 +43,7 @@ Parameters:
 ;; that makes writing the protobuf parser a good deal more complicated.
 (defclass descriptor (abstract-descriptor)
   ;; The Lisp name for the type of this object. For messages and groups it's
-  ;; the name of a struct. For proto scalar types it's INT32, STRING,
-  ;; etc.
+  ;; the name of a struct. For scalar types it's INT32, STRING, etc.
   ((class :type symbol
           :accessor proto-class
           :initarg :class
